@@ -136,3 +136,39 @@ selection.attr("class", "container");
 
 Note that the "class" parameter will remain the same whenever you need to add a class and only 
 the "container" parameter will change.
+
+8. Update the Height of an Element Dynamically
+The previous challenges covered how to display data from an array and how to add CSS classes. 
+You can combine these lessons to create a simple bar chart. 
+There are two steps to this:
+
+1) Create a div for each data point in the array
+
+2) Give each div a dynamic height, using a callback function in the style() method that sets height equal to the data value
+
+Recall the format to set a style using a callback function:
+
+selection.style("cssProperty", (d) => d)
+
+9. Change the Presentation of a Bar Chart
+
+The last challenge created a bar chart, but there are a couple of formatting changes that could improve it:
+
+1) Add space between each bar to visually separate them, which is done by adding a margin to the CSS for the bar class
+
+2) Increase the height of the bars to better show the difference in values, which is done by multiplying the value by a number to scale the height
+
+10. Learn About SVG in D3
+SVG stands for Scalable Vector Graphics.
+
+Here "scalable" means that, if you zoom in or out on an object, it would not appear pixelated. 
+It scales with the display system, whether it's on a small mobile screen or a large TV monitor.
+
+SVG is used to make common geometric shapes. 
+Since D3 maps data into a visual representation, it uses SVG to create the shapes for the visualization. 
+SVG shapes for a web page must go within an HTML svg tag.
+
+CSS can be scalable when styles use relative units (such as vh, vw, or percentages), 
+   but using SVG is more flexible to build data visualizations.
+
+
